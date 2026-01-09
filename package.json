@@ -13,6 +13,7 @@
   "dependencies": {
     "@metaplex-foundation/umi": "^1.4.1",
     "@metaplex-foundation/umi-bundle-defaults": "^1.4.1",
+    "@solana-developers/helpers": "^2.8.1",
     "@solana-program/memo": "^0.10.0",
     "@solana/client": "^1.5.0",
     "@solana/kit": "^5.1.0",

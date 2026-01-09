@@ -1,10 +1,18 @@
 import * as ts from "typescript";
 import { readFileSync } from "fs";
 
-const files = ["kite.ts", "gill.ts", "kit.ts", "framework-kit.ts", "umi.ts", "web3js.ts"];
+const files = [
+  { file: "kite.ts", name: "Kite" },
+  { file: "gill.ts", name: "Gill" },
+  { file: "kit.ts", name: "Solana Kit" },
+  { file: "framework-kit.ts", name: "Foundation Kit" },
+  { file: "umi.ts", name: "Umi" },
+  { file: "web3js.ts", name: "web3.js v1" },
+  { file: "web3js-with-solana-helpers.ts", name: "web3.js v1 + helpers" },
+];
 
 interface TokenCount {
-  file: string;
+  name: string;
   tokens: number;
 }
 
@@ -41,9 +49,9 @@ const countTokens = (filePath: string): number => {
 
 const results: Array<TokenCount> = [];
 
-for (const file of files) {
-  const tokens = countTokens(file);
-  results.push({ file, tokens });
+for (const fileEntry of files) {
+  const tokens = countTokens(fileEntry.file);
+  results.push({ name: fileEntry.name, tokens });
 }
 
 results.sort((a, b) => a.tokens - b.tokens);
@@ -62,7 +70,7 @@ for (const result of results) {
   }
 
   console.log(
-    `${result.file.padEnd(20)} ${result.tokens
+    `${result.name.padEnd(25)} ${result.tokens
       .toString()
       .padStart(4)} tokens${moreCodeIndicator}`
   );
