@@ -30,7 +30,7 @@ Run `npx tsx count-tokens.ts` to see the results. As of 2026 01 09, they are:
 === Token Count Results ===
 
 Kite                        79 tokens
-Foundation Kit              99 tokens (25.3% more code)
+Framework Kit              99 tokens (25.3% more code)
 web3.js v1 + helpers       122 tokens (54.4% more code)
 web3.js v1                 145 tokens (83.5% more code)
 Gill                       157 tokens (98.7% more code)
