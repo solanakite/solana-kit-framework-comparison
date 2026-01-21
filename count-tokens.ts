@@ -9,6 +9,7 @@ const files = [
   { file: "umi.ts", name: "Umi" },
   { file: "web3js.ts", name: "web3.js v1" },
   { file: "web3js-with-solana-helpers.ts", name: "web3.js v1 + helpers" },
+  { file: "helius-sdk.ts", name: "Helius SDK" },
 ];
 
 interface TokenCount {

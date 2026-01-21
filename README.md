@@ -15,6 +15,7 @@ Code complexity is measured by counting programming tokens (keywords, identifier
 - [Metaplex Umi](https://github.com/metaplex-foundation/umi)
 - [web3.js v1](https://solana-labs.github.io/solana-web3.js/)
 - [web3.js v1 with @solana-developers/helpers](https://github.com/solana-developers/helpers)
+- [Helius SDK](https://github.com/helius-labs/helius-sdk)
 
 ## Token Counting
 
@@ -24,17 +25,18 @@ npx tsx count-tokens.ts
 
 ## Results
 
-Run `npx tsx count-tokens.ts` to see the results. As of 2026 01 09, they are:
+Run `npx tsx count-tokens.ts` to see the results. As of 2026 01 21, they are:
 
 ```
 === Token Count Results ===
 
 Kite                        79 tokens
-Framework Kit              99 tokens (25.3% more code)
+Framework Kit               99 tokens (25.3% more code)
 web3.js v1 + helpers       122 tokens (54.4% more code)
 web3.js v1                 145 tokens (83.5% more code)
 Gill                       157 tokens (98.7% more code)
 Umi                        182 tokens (130.4% more code)
+Helius SDK                 247 tokens (212.7% more code)
 Solana Kit                 251 tokens (217.7% more code)
 ```
 
@@ -48,4 +50,5 @@ npx tsx framework-kit.ts
 npx tsx umi.ts
 npx tsx web3js.ts
 npx tsx web3js-with-solana-helpers.ts
+npx tsx helius-sdk.ts
 ```
