@@ -5,7 +5,7 @@ const files = [
   { file: "kite.ts", name: "Kite" },
   { file: "gill.ts", name: "Gill" },
   { file: "kit.ts", name: "Solana Kit" },
-  { file: "framework-kit.ts", name: "Foundation Kit" },
+  { file: "framework-kit.ts", name: "Framework Kit" },
   { file: "umi.ts", name: "Umi" },
   { file: "web3js.ts", name: "web3.js v1" },
   { file: "web3js-with-solana-helpers.ts", name: "web3.js v1 + helpers" },
